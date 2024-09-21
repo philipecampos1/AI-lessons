@@ -9,7 +9,7 @@ client = OpenAI(
 response = client.audio.speech.create(
     model='tts-1',
     voice='nova',
-    input='',
+    input='Estou gostando de brincar com a impresora 3d',
 )
 
 response.write_to_file('meu_audio.mp3')
