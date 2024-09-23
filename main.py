@@ -2,14 +2,16 @@ from openai import OpenAI
 from secret import OPEN_AI_API
 
 
-# client = OpenAI(
-#     api_key=OPEN_AI_API,
-# )
+client = OpenAI(
+    api_key=OPEN_AI_API,
+)
+
+# This one could be used in websites since give information line by line
 
 # stream = client.chat.completions.create(
 #     model='gpt-3.5-turbo',
 #     messages=[
-#         {'role': 'user', 'content': 'Me fale mais sobre o fiat elba 1988'},
+#         {'role': 'user', 'content': 'Tell me about python'},
 #     ],
 #     stream=True
 # )
@@ -19,10 +21,7 @@ from secret import OPEN_AI_API
 #         print(chunk.choices[0].delta.content, end='')
 
 
-client = OpenAI(
-    api_key=OPEN_AI_API,
-)
-
+# This one gives a role to AI allowing to get an 'Personality'
 response = client.chat.completions.create(
     model='gpt-3.5-turbo',
     messages=[
