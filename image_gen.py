@@ -7,7 +7,7 @@ client = OpenAI(
 
 response = client.images.generate(
     model="dall-e-3",
-    prompt='uma pessoa brincando com sua impresora 3d no estilo futurista',
+    prompt='Person working with an Ai like tony stark and jarvis',
     size='1024x1024',
     quality='standard',
     n=1,

@@ -28,11 +28,11 @@ response = client.chat.completions.create(
     messages=[
         {
             'role': 'system',
-            'content': 'De respostas tecnicas sobre programacao, Se comporte como um programador python experiente, especialista em padroes de projetos e arquitetura limpa'
+            'content': 'Give technical answers, as you a professional python developer, specializing in clean architecture project'
         },
         {
             'role': 'user',
-            'content': 'Me fale como posso criar uma restfull api'
+            'content': 'Can you tell me how to make a restfull api'
         },
     ],
 )
